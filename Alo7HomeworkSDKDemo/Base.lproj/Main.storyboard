@@ -92,7 +92,7 @@
                                 </constraints>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Token" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nIi-ch-ubN">
-                                <rect key="frame" x="107" y="240" width="200" height="34"/>
+                                <rect key="frame" x="107" y="196" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="z23-DK-NgI"/>
                                 </constraints>
@@ -104,30 +104,45 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ThirdClazzId(若多个,隔开)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zEb-QR-ZtW">
+                                <rect key="frame" x="107" y="250" width="200" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="utr-vz-lQF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7Pt-HD-4MA" firstAttribute="centerY" secondItem="gk2-Kf-zVc" secondAttribute="centerY" id="35G-aK-BvW"/>
-                            <constraint firstItem="NM6-F9-UuF" firstAttribute="top" secondItem="nIi-ch-ubN" secondAttribute="bottom" constant="30" id="BCE-sc-dkq"/>
+                            <constraint firstItem="zEb-QR-ZtW" firstAttribute="width" secondItem="nIi-ch-ubN" secondAttribute="width" id="FuG-ip-6IP"/>
                             <constraint firstItem="NM6-F9-UuF" firstAttribute="centerX" secondItem="nIi-ch-ubN" secondAttribute="centerX" id="IjE-er-bHx"/>
+                            <constraint firstItem="zEb-QR-ZtW" firstAttribute="top" secondItem="nIi-ch-ubN" secondAttribute="bottom" constant="20" id="Lnz-70-Eet"/>
+                            <constraint firstItem="NM6-F9-UuF" firstAttribute="height" secondItem="nIi-ch-ubN" secondAttribute="height" id="U6p-pO-MQs"/>
                             <constraint firstItem="NM6-F9-UuF" firstAttribute="width" secondItem="nIi-ch-ubN" secondAttribute="width" id="UuY-6p-pLi"/>
                             <constraint firstItem="7Pt-HD-4MA" firstAttribute="centerX" secondItem="gk2-Kf-zVc" secondAttribute="centerX" id="Uyu-fl-ph3"/>
+                            <constraint firstItem="zEb-QR-ZtW" firstAttribute="centerX" secondItem="gk2-Kf-zVc" secondAttribute="centerX" id="VrW-Xu-6jC"/>
                             <constraint firstItem="7Pt-HD-4MA" firstAttribute="centerX" secondItem="nIi-ch-ubN" secondAttribute="centerX" id="aff-9P-4It"/>
+                            <constraint firstItem="NM6-F9-UuF" firstAttribute="top" secondItem="zEb-QR-ZtW" secondAttribute="bottom" constant="20" id="cEz-t9-bHK"/>
                             <constraint firstItem="7Pt-HD-4MA" firstAttribute="centerX" secondItem="gk2-Kf-zVc" secondAttribute="centerX" id="clL-Lg-jKu"/>
+                            <constraint firstItem="zEb-QR-ZtW" firstAttribute="height" secondItem="nIi-ch-ubN" secondAttribute="height" id="lu8-zh-agn"/>
+                            <constraint firstItem="NM6-F9-UuF" firstAttribute="centerX" secondItem="nIi-ch-ubN" secondAttribute="centerX" id="nEj-NY-wnR"/>
                             <constraint firstItem="7Pt-HD-4MA" firstAttribute="top" secondItem="NM6-F9-UuF" secondAttribute="bottom" constant="30" id="nnN-kP-b97"/>
+                            <constraint firstItem="nIi-ch-ubN" firstAttribute="centerX" secondItem="gk2-Kf-zVc" secondAttribute="centerX" id="rHF-h4-yaZ"/>
+                            <constraint firstItem="zEb-QR-ZtW" firstAttribute="centerX" secondItem="nIi-ch-ubN" secondAttribute="centerX" id="wZu-k6-EgI"/>
+                            <constraint firstItem="NM6-F9-UuF" firstAttribute="width" secondItem="nIi-ch-ubN" secondAttribute="width" id="zvy-eH-rcg"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Present" id="wU0-ed-QCA"/>
                     <navigationItem key="navigationItem" id="DQc-i9-ycD"/>
                     <connections>
                         <outlet property="homeworkId" destination="NM6-F9-UuF" id="rls-bl-04b"/>
+                        <outlet property="thirdClazzIds" destination="zEb-QR-ZtW" id="Yt3-dM-m0f"/>
                         <outlet property="token" destination="nIi-ch-ubN" id="V62-YN-Wk1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v8v-Be-Sdm" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="703" y="729"/>
+            <point key="canvasLocation" x="1296" y="708"/>
         </scene>
         <!--Push-->
         <scene sceneID="abR-x8-uBH">
@@ -173,7 +188,7 @@
                                 </constraints>
                             </stackView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Token" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E2Y-LD-PsT">
-                                <rect key="frame" x="107" y="240" width="200" height="34"/>
+                                <rect key="frame" x="107" y="196" width="200" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="200" id="NvM-ys-sMw"/>
                                 </constraints>
@@ -185,24 +200,36 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="ThirdClazzId(若多个,隔开)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KJe-Wp-YzD">
+                                <rect key="frame" x="107" y="250" width="200" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="0Iz-kN-Dhp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="E2Y-LD-PsT" firstAttribute="centerX" secondItem="K9M-Q9-Egp" secondAttribute="centerX" id="0LI-4x-GY9"/>
+                            <constraint firstItem="KJe-Wp-YzD" firstAttribute="top" secondItem="E2Y-LD-PsT" secondAttribute="bottom" constant="20" id="1cY-Pi-Ya6"/>
                             <constraint firstItem="4Pb-Yw-TIO" firstAttribute="centerX" secondItem="E2Y-LD-PsT" secondAttribute="centerX" id="6s3-lB-tys"/>
-                            <constraint firstItem="4Pb-Yw-TIO" firstAttribute="top" secondItem="E2Y-LD-PsT" secondAttribute="bottom" constant="30" id="Dbi-fo-XiR"/>
+                            <constraint firstItem="KJe-Wp-YzD" firstAttribute="centerX" secondItem="K9M-Q9-Egp" secondAttribute="centerX" id="BVC-vt-lRH"/>
                             <constraint firstItem="w8v-PX-Xgh" firstAttribute="centerX" secondItem="K9M-Q9-Egp" secondAttribute="centerX" id="FuR-du-GQW"/>
                             <constraint firstItem="w8v-PX-Xgh" firstAttribute="centerX" secondItem="E2Y-LD-PsT" secondAttribute="centerX" id="KYh-Gb-FLs"/>
+                            <constraint firstItem="KJe-Wp-YzD" firstAttribute="width" secondItem="E2Y-LD-PsT" secondAttribute="width" id="NF2-Pp-okO"/>
                             <constraint firstItem="w8v-PX-Xgh" firstAttribute="centerX" secondItem="K9M-Q9-Egp" secondAttribute="centerX" id="PHu-4Y-jUZ"/>
                             <constraint firstItem="4Pb-Yw-TIO" firstAttribute="width" secondItem="E2Y-LD-PsT" secondAttribute="width" id="eok-oM-tcA"/>
+                            <constraint firstItem="4Pb-Yw-TIO" firstAttribute="top" secondItem="KJe-Wp-YzD" secondAttribute="bottom" constant="20" id="git-z8-6Ul"/>
                             <constraint firstItem="w8v-PX-Xgh" firstAttribute="top" secondItem="4Pb-Yw-TIO" secondAttribute="bottom" constant="30" id="rha-mR-7dX"/>
+                            <constraint firstItem="KJe-Wp-YzD" firstAttribute="height" secondItem="E2Y-LD-PsT" secondAttribute="height" id="tEB-dD-FH6"/>
                             <constraint firstItem="w8v-PX-Xgh" firstAttribute="centerY" secondItem="K9M-Q9-Egp" secondAttribute="centerY" id="ulB-3U-q2k"/>
+                            <constraint firstItem="E2Y-LD-PsT" firstAttribute="centerX" secondItem="K9M-Q9-Egp" secondAttribute="centerX" id="wrg-sr-gqy"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Present" id="VmW-vc-C10"/>
                     <navigationItem key="navigationItem" id="COJ-cu-IOX"/>
                     <connections>
                         <outlet property="homeworkId" destination="4Pb-Yw-TIO" id="dp9-ST-qQB"/>
+                        <outlet property="thirdClazzIds" destination="KJe-Wp-YzD" id="UWb-f0-tfy"/>
                         <outlet property="token" destination="E2Y-LD-PsT" id="An3-Nq-WlH"/>
                     </connections>
                 </viewController>

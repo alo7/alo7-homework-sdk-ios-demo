@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var homeworkId: UITextField!
  
+    @IBOutlet weak var thirdClazzIds: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,7 @@ class ViewController: UIViewController {
             return
         }
         Alo7HomeworkSDK.assignHomework(token: token,
+                                       thirdPartyClazzIds: thirdClazzIds.text?.split(separator: ",").compactMap({"\($0)"}),
                                        from: self,
                                        success: {
                                         
@@ -87,4 +89,3 @@ class ViewController: UIViewController {
     }
 }
 
-    

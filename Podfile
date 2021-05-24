@@ -10,5 +10,5 @@ target 'Alo7HomeworkSDKDemo' do
   pod 'RxSwift', '~> 5.1.0'
   pod 'RxCocoa', '~> 5.1.0'
   pod 'WebViewJavascriptBridge', '~> 6.0.0'
-pod 'Alo7HomeworkSDK'
+  pod 'Alo7HomeworkSDK'
 end
