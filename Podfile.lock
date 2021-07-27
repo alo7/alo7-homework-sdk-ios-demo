@@ -1,21 +1,18 @@
 PODS:
-  - Alo7HomeworkSDK (0.1.0):
-    - RxCocoa (~> 5.1.0)
-    - RxSwift (~> 5.1.0)
+  - Alo7HomeworkSDK (0.3.0):
+    - RxCocoa (~> 6.2.0)
+    - RxSwift (~> 6.2.0)
     - WebViewJavascriptBridge (~> 6.0.0)
-  - RxCocoa (5.1.1):
-    - RxRelay (~> 5)
-    - RxSwift (~> 5)
-  - RxRelay (5.1.1):
-    - RxSwift (~> 5)
-  - RxSwift (5.1.2)
+  - RxCocoa (6.2.0):
+    - RxRelay (= 6.2.0)
+    - RxSwift (= 6.2.0)
+  - RxRelay (6.2.0):
+    - RxSwift (= 6.2.0)
+  - RxSwift (6.2.0)
   - WebViewJavascriptBridge (6.0.3)
 
 DEPENDENCIES:
   - Alo7HomeworkSDK
-  - RxCocoa (~> 5.1.0)
-  - RxSwift (~> 5.1.0)
-  - WebViewJavascriptBridge (~> 6.0.0)
 
 SPEC REPOS:
   https://github.com/alo7/ios-repo.git:
@@ -27,12 +24,12 @@ SPEC REPOS:
     - WebViewJavascriptBridge
 
 SPEC CHECKSUMS:
-  Alo7HomeworkSDK: a2faf78cd3e5da979d062a14316d807c9e58fef2
-  RxCocoa: 32065309a38d29b5b0db858819b5bf9ef038b601
-  RxRelay: d77f7d771495f43c556cbc43eebd1bb54d01e8e9
-  RxSwift: 1e2e1f9570186967f617e49128ed26ccf1bafc8e
+  Alo7HomeworkSDK: 2feda139c7da96e223d1262820fc66841a34b591
+  RxCocoa: 4baf94bb35f2c0ab31bc0cb9f1900155f646ba42
+  RxRelay: e72dbfd157807478401ef1982e1c61c945c94b2f
+  RxSwift: d356ab7bee873611322f134c5f9ef379fa183d8f
   WebViewJavascriptBridge: 7f5bc4d3581e672e8f32bd0f812d54bc69bb8e29
 
-PODFILE CHECKSUM: 03a2b259ce3720169e6509ccf25189631c6d1ef8
+PODFILE CHECKSUM: 4f032fd90be99270eacdcf3d6ecbac89aad60485
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

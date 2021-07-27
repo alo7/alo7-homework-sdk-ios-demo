@@ -33,7 +33,14 @@ class ViewController: UIViewController {
                                        },
                                        fail: { [weak self ](error) in
                                         self?.showAlert(with: error.debugDescription)
-                                       })
+                                       }) { (state) in
+            switch state {
+            case .close(let data):
+                self.showAlert(with: "\(data)")
+            @unknown default:
+                fatalError()
+            }
+        }
     }
     
     @IBAction func teacheCheck(_ sender: Any) {
